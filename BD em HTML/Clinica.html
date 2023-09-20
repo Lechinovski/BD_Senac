@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <li> Ambulatorios
+        <table>
+            <tr>
+                <th colspan="3">Ambulatorio</th>
+            </tr>
+            <tr>
+                <th>nroa</th>
+                <th>andar</th>
+                <th>capacidade</th>
+            </tr>
+            <tr class="odd">
+                <td>1</td>
+                <td>1</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1</td>
+                <td>50</td>
+            </tr>
+            <tr class="odd">
+                <td>3</td>
+                <td>2</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2</td>
+                <td>25</td>
+            </tr>
+            <tr class="odd">
+                <td>5</td>
+                <td>2</td>
+                <td>55</td>
+            </tr>
+        </table>
+    </li>
+    <li> Medicos
+        <table>
+            <tr>
+                <th colspan="7">Medicos</th>
+            </tr>
+            <tr>
+                <th>codm</th>
+                <th>nome</th>
+                <th>idade</th>
+                <th>especialidade</th>
+                <th>CPF</th>
+                <th>cidade</th>
+                <th>fk_Ambulatorio_nroa</th>
+            </tr>
+            <tr class="odd">
+                <td>1</td>
+                <td>João</td>
+                <td>40</td>
+                <td>Ortopedia</td>
+                <td>10000100000</td>
+                <td>Florianopolis</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>42</td>
+                <td>Traumatologia</td>
+                <td>10000110000</td>
+                <td>Blumenau</td>
+                <td>2</td>
+            </tr>
+            <tr class="odd">
+                <td>3</td>
+                <td>Pedro</td>
+                <td>51</td>
+                <td>Pediatria</td>
+                <td>11000010000</td>
+                <td>São José</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Carlos</td>
+                <td>28</td>
+                <td>Ortopedia</td>
+                <td>11000110000</td>
+                <td>Joinville</td>
+                <td>4</td>
+            </tr>
+            <tr class="odd">
+                <td>5</td>
+                <td>Marcia</td>
+                <td>33</td>
+                <td>Neurologia</td>
+                <td>11000111000</td>
+                <td>Biguacu</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </li>
+    <li> Pacientes
+        <table>
+            <tr>
+                <th colspan="6">Pacientes</th>
+            </tr>
+            <tr>
+                <th>codp</th>
+                <th>nome</th>
+                <th>idade</th>
+                <th>cidade</th>
+                <th>CPF</th>
+                <th>doenca</th>
+            </tr>
+            <tr class="odd">
+                <td>1</td>
+                <td>Ana</td>
+                <td>20</td>
+                <td>Florianopolis</td>
+                <td>20000200000</td>
+                <td>Gripe</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Paulo</td>
+                <td>24</td>
+                <td>Palhoca</td>
+                <td>20000220000</td>
+                <td>fratura</td>
+            </tr>
+            <tr class="odd">
+                <td>3</td>
+                <td>Lucia</td>
+                <td>30</td>
+                <td>Biguacu</td>
+                <td>22000200000</td>
+                <td>tendinite</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Carlos</td>
+                <td>28</td>
+                <td>Joinville</td>
+                <td>11000110000</td>
+                <td>sarampo</td>
+            </tr>
+        </table>
+    </li>
+    <li> Funcionarios
+        <table>
+            <tr>
+                <th colspan="7">Funcionarios</th>
+            </tr>
+            <tr>
+                <th>codf</th>
+                <th>nome</th>
+                <th>idade</th>
+                <th>CPF</th>
+                <th>cidade</th>
+                <th>salario</th>
+                <th>cargo</th>
+            </tr>
+            <tr class="odd">
+                <td>1</td>
+                <td>Rita</td>
+                <td>32</td>
+                <td>20000100000</td>
+                <td>Sao Jose</td>
+                <td>1,200</td>
+                <td>Enfermeira</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>55</td>
+                <td>30000110000</td>
+                <td>Palhoca</td>
+                <td>1,220</td>
+                <td>Enfermeira</td>
+            </tr>
+            <tr class="odd">
+                <td>3</td>
+                <td>Caio</td>
+                <td>45</td>
+                <td>41000100000</td>
+                <td>Florianopolis</td>
+                <td>1,100</td>
+                <td>Enfermeiro</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Carlos</td>
+                <td>44</td>
+                <td>51000110000</td>
+                <td>Florianopolis</td>
+                <td>1,200</td>
+                <td>Enfermeiro</td>
+            </tr>
+            <tr class="odd">
+                <td>5</td>
+                <td>Paula</td>
+                <td>33</td>
+                <td>61000111000</td>
+                <td>Florianopolis</td>
+                <td>2,500</td>
+                <td>Enfermeira</td>
+            </tr>
+        </table>
+    </li>
+    <li> Consultas
+        <table>
+            <tr>
+                <th colspan="5">Consultas</th>
+            </tr>
+            <tr>
+                <th>Num_consultas</th>
+                <th>fk_Medico_codm</th>
+                <th>fk_Paciente_codp</th>
+                <th>consulta_data</th>
+                <th>consulta_hora</th>
+            </tr>
+            <tr class="odd">
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2006-06-12</td>
+                <td>14:00:00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>2006-06-13</td>
+                <td>10:00:00</td>
+            </tr>
+            <tr class="odd">
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>2006-06-13</td>
+                <td>09:00:00</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2006-06-13</td>
+                <td>11:00:00</td>
+            </tr>
+            <tr class="odd">
+                <td>5</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2006-06-14</td>
+                <td>14:00:00</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>2</td>
+                <td>4</td>
+                <td>2006-06-14</td>
+                <td>17:00:00</td>
+            </tr>
+            <tr class="odd">
+                <td>7</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2006-06-19</td>
+                <td>18:00:00</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>3</td>
+                <td>3</td>
+                <td>2006-06-12</td>
+                <td>10:00:00</td>
+            </tr>
+            <tr class="odd">
+                <td>9</td>
+                <td>3</td>
+                <td>4</td>
+                <td>2006-06-19</td>
+                <td>13:00:00</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>4</td>
+                <td>4</td>
+                <td>2006-06-20</td>
+                <td>13:00:00</td>
+            </tr>
+            <tr class="odd">
+                <td>11</td>
+                <td>4</td>
+                <td>4</td>
+                <td>2006-06-22</td>
+                <td>19:30:00</td>
+            </tr>
+        </table>
+    </li>
+</body>
+
+</html>
