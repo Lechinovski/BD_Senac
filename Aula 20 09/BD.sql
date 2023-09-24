@@ -97,4 +97,4 @@ insert into consulta (fk_Medico_codm, fk_Paciente_codp, consulta_data, consulta_
 (4, 4, '2006/06/20', '13:00'),
 (4, 4, '2006/06/22', '19:30');
 
-select * from ambulatorio, consulta, funcionario, medico, paciente;
+select * from ambulatorio, consulta, funcionario, medico, paciente; 
